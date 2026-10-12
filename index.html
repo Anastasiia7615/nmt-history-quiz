@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <title>НМТ Історія України — Картки</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Історія України · НМТ</h1>
+      <p class="subtitle">Картки для підготовки</p>
+    </header>
+
+    <!-- Режими -->
+    <div class="modes">
+      <button class="mode-btn active" data-mode="topics">Теми</button>
+      <button class="mode-btn" data-mode="sources">Джерела</button>
+      <button class="mode-btn" data-mode="all">Усі</button>
+    </div>
+
+    <!-- Фільтри тем -->
+    <div class="filters" id="topicFilters">
+      <button class="filter-btn active" data-topic="all">Усі теми</button>
+      <button class="filter-btn" data-topic="11">11</button>
+      <button class="filter-btn" data-topic="12">12</button>
+      <button class="filter-btn" data-topic="13">13</button>
+      <button class="filter-btn" data-topic="14">14</button>
+      <button class="filter-btn" data-topic="15">15</button>
+      <button class="filter-btn" data-topic="16">16</button>
+      <button class="filter-btn" data-topic="17">17</button>
+      <button class="filter-btn" data-topic="18">18</button>
+      <button class="filter-btn" data-topic="20">20</button>
+      <button class="filter-btn" data-topic="21">21</button>
+      <button class="filter-btn" data-topic="22">22</button>
+      <button class="filter-btn" data-topic="23">23</button>
+      <button class="filter-btn" data-topic="24">24</button>
+      <button class="filter-btn" data-topic="25">25</button>
+      <button class="filter-btn" data-topic="26">26</button>
+      <button class="filter-btn" data-topic="27">27</button>
+      <button class="filter-btn" data-topic="28">28</button>
+      <button class="filter-btn" data-topic="29">29</button>
+      <button class="filter-btn" data-topic="30">30</button>
+    </div>
+
+    <!-- Картка -->
+    <div class="card-container">
+      <div class="card" id="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="topic-badge" id="topicBadge"></div>
+            <div class="question" id="question"></div>
+            <div class="hint">Натисни, щоб побачити відповідь</div>
+          </div>
+          <div class="card-back">
+            <div class="answer" id="answer"></div>
+            <div class="image-container" id="imageContainer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Навігація -->
+    <div class="nav">
+      <button id="prevBtn" class="nav-btn">← Назад</button>
+      <span id="counter" class="counter"></span>
+      <button id="nextBtn" class="nav-btn">Вперед →</button>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
